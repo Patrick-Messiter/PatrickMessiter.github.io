@@ -7,16 +7,33 @@
 }
 
 
+h2 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 0.15em hsla(177, 100%, 35%, 1);
+}
+
+/* DESKTOP SCREEN */
 
 /* NAV SECTION */ 
 
 nav {
     display: flex;
-    background-color: hsla(177, 4%, 86%, 1);
+    background-color: hsla(177, 4%, 86%, 0.2);
     padding-top: 1rem;
     padding-bottom: 1rem;
     justify-content: space-evenly;
     box-shadow: 0 0 0.45em hsla(177, 100%, 35%, 1);
+    position: fixed;
+    width: 30%;
+    border-radius: 2%;
+    backdrop-filter: blur(0.3rem);
+    margin-left: 65%;
+    margin-top: 1%;
+}
+
+nav li {
+    display: flex;
+    list-style-type: none;
 }
 
 nav .button {
@@ -29,9 +46,9 @@ nav .button {
     text-decoration: none;
     cursor: pointer;
     font-size: 1.5rem;
-
     text-shadow: 0 0 0.25em hsla(177, 100%, 35%, 1);
-
+    display: flex;
+    justify-content: center;
 }
 
 nav .button:hover {
@@ -50,7 +67,7 @@ nav .button:hover {
     grid-template-rows: repeat(4, 1fr);
     width: auto;
     height: 30rem;
-    margin-top: 1rem;
+    padding-top: 10rem;
 }
 
 #title {
@@ -76,8 +93,6 @@ nav .button:hover {
     }
 }
 
-
-
 #coverPhoto {
     display: flex;
     overflow: hidden;
@@ -91,9 +106,93 @@ nav .button:hover {
     box-shadow: 0 0 0.45em hsla(177, 100%, 35%, 1);
 }
 
-h2 {
-    font-size: 2.5rem;
-    text-shadow: 0 0 0.15em hsla(177, 100%, 35%, 1);
+/*MAIN SECTION */
+
+main {
+    display: block;
+    margin: 3%;
 }
 
+/* ABOUT SECTION */
+
+.about {
+    display: flex;
+    border: 0.1rem solid hsla(177, 100%, 35%, 1);
+    border-radius: 10px;
+    justify-content: space-evenly;
+    padding-right: 10%;
+}
+
+#about-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.about p {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.about p:hover {
+    font-size: 1.4rem;
+    transition: .75s;
+    flex-wrap: wrap;
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+    display: flex;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+    display: block;
+}
+
+
+.language-logos {
+    display: flex;
+    list-style-type: none;
+}
+.language-logos img {
+    aspect-ratio: 1;
+    width: 7rem;
+}
+
+
+
+/* MOBILE SCREEN */
+
+@media only screen and (max-width: 1298px) and (min-width: 408px) {
+    
+    /*NAV BAR */
+
+    nav {
+        flex-direction: column;
+        width: 13%;
+        margin-left: 85%;
+        column-gap: 10%;
+        justify-content: center;
+    }
+
+    nav .button {
+        margin: 2%;
+    }
+
+    /* HERO SECTION */
+
+    #coverPhoto {
+        height: 25rem;
+        width: 25rem;
+        grid-area: 1 / 2 /span 3 / span 3;
+    }
+
+    #title {
+        grid-area: 4 / 2 / span 1 / span 3;
+    }
+}
 
