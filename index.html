@@ -24,7 +24,7 @@
       <img id="coverPhoto" src="Resources/Cover Photo-sqaure.jpg" alt="Cover photo of myself">
     </div>
     <main>
-      <section class="about">
+      <section id="about">
         <h2 id="about-title">About Me:</h2>
         <p>&#128075;, I'm a 27 year old self-taught programmer from Newcastle, Australia.<br>
           I have been studying front-end programming/web development for the past six months.<br>
@@ -33,21 +33,39 @@
           Below you will see some projects of mine, that I am excited to share with you!<br> 
         </p>
       </section>
-      <section class="projects">
+      <section id="projects">
         <h2>Projects:</h2>
       </section>
-      <section class="skills">
+      <section id="skills">
         <h2>Skills:</h2>
-        <p>Over the course of the last 6 months I have been learning HTML5, CSS3 and JavaScript. Further, I have also previously studied Python for several months.</p>
-        <ul class="language-logos">
-          <li><img src="Resources/HTML5_logo.png" alt="image of HTML5 logo"></li>
-          <li><img src="Resources/CSS3_logo.png" alt="image of CSS3 logo"></li>
-          <li><img src="Resources/JS_logo.png" alt="image of JavaScript logo"></li>
+        <ul class="languages-list">
+         <li>HTML5</li>
+         <li>CSS3</li>
+         <li>JavaScript</li>
         </ul>
+      </section>
+      <section id="contact">
+        <div class="contact-container">
+          <form action="" method="POST">
+            <h2 id="contact-title">Contact:</h2>
+            <div class="contact-background">
+              <label for="name">Name: </label>
+              <input type="text" id="name" placeholder="enter here:" required>
+            </div>
+            <div class="contact-background">
+              <label for="email">Email: </label>
+              <input type="email" id="email" placeholder="enter here:" required>
+            </div>
+            <div class=contact-background>
+              <label type="message">Let's get in touch!</label>
+              <textarea id="message" rows="4" placeholder="Message here:"></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
       </section>
     </main>
   </body>
-  <footer id="contact">
-    <h2>Contact:</h2>
+  <footer>
   </footer>
 </html>
