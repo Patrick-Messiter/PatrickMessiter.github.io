@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PatrickMessiter.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/PatrickMessiter.github.io/static/js/main.e7bed2f7.js",
+    "index.html": "/PatrickMessiter.github.io/index.html",
+    "main.073c9b0a.css.map": "/PatrickMessiter.github.io/static/css/main.073c9b0a.css.map",
+    "main.e7bed2f7.js.map": "/PatrickMessiter.github.io/static/js/main.e7bed2f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e7bed2f7.js"
+  ]
+}
